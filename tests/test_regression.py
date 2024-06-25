@@ -41,4 +41,5 @@ class TestEndToEnd(BaseClass):
         sleep(2)
         self.driver.find_element(By.XPATH, "//span[text()='Place Order']").click()
         sleep(5)
-        self.driver.quit()
+        print("This is a newly created message for git session")
+        print("New changes by American Timezone guy.")

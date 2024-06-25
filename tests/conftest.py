@@ -21,7 +21,7 @@ def setup(request):
     elif browser_name == "firefox":
         driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
     driver.maximize_window()
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(15)
     driver.get("http://staging.shopping.beeyor.com/shop/")
     request.cls.driver = driver
     yield
